@@ -1,0 +1,14 @@
+
+
+<p style="color: green"><%= notice %></p>
+
+<%= render @project %>
+
+<div>
+ <%= link_to "Edit", edit_project_path(@project), class: "btn btn-default btn-warning" %>  
+  <%= link_to "Back to projects", projects_path, class: "btn btn-default btn-info" %>
+
+  <%= button_to "delete", @project, method: :delete, class: "btn btn-default btn-danger", i: "bi bi-x-circle" %>
+
+  
+</div>
